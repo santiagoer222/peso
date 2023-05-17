@@ -1,19 +1,16 @@
-def crear_biografia(nombre, fecha_nacimiento, lugar_nacimiento, descripcion):
-    biografia = f"Biografía de {nombre}\n\n"
-    biografia += f"Fecha de nacimiento: {fecha_nacimiento}\n"
-    biografia += f"Lugar de nacimiento: {lugar_nacimiento}\n\n"
-    biografia += f"Descripción: {descripcion}\n"
-    return biografia
+def calcular_peso_en_otro_planeta(peso_tierra, gravedad_planeta):
+    peso_otro_planeta = peso_tierra * gravedad_planeta / 9.8
+    return peso_otro_planeta
 
-# Solicitar información al usuario
-nombre = input("Ingrese el nombre: ")
-fecha_nacimiento = input("Ingrese la fecha de nacimiento: ")
-lugar_nacimiento = input("Ingrese el lugar de nacimiento: ")
-descripcion = input("Ingrese una breve descripción: ")
+# Peso en la Tierra (en kilogramos)
+peso_tierra = float(input("Ingresa el peso en la Tierra (en kg): "))
 
-# Crear la biografía
-biografia = crear_biografia(nombre, fecha_nacimiento, lugar_nacimiento, descripcion)
+# Calcular peso en la Luna
+gravedad_luna = 1.622  # gravedad en la Luna en m/s^2
+peso_luna = calcular_peso_en_otro_planeta(peso_tierra, gravedad_luna)
+print("El peso en la Luna es:", peso_luna, "kg")
 
-# Imprimir la biografía
-print("\n--- Biografía ---")
-print(biografia)
+# Calcular peso en Marte
+gravedad_marte = 3.71  # gravedad en Marte en m/s^2
+peso_marte = calcular_peso_en_otro_planeta(peso_tierra, gravedad_marte)
+print("El peso en Marte es:", peso_marte, "kg")
