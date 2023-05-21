@@ -1,8 +1,8 @@
-def calcular_peso_en_otro_planeta(peso_tierra, gravedad_planeta):
-    peso_otro_planeta = masa_tierra * gravedad_planeta / 9.8
+ef calcular_peso_en_otro_planeta(peso_tierra, gravedad_planeta):
+    peso_otro_planeta = peso_tierra * gravedad_planeta / 9.8
     return peso_otro_planeta
 
-# Peso en la Tierra (en kilogramos)
+# Peso en la Tierra (en NEWTONS)
 peso_tierra = float(input("Ingresa el peso en la Tierra (en N): "))
 
 # Calcular peso en la Luna
