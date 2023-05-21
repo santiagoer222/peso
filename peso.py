@@ -1,4 +1,4 @@
-ef calcular_peso_en_otro_planeta(peso_tierra, gravedad_planeta):
+def calcular_peso_en_otro_planeta(peso_tierra, gravedad_planeta):
     peso_otro_planeta = peso_tierra * gravedad_planeta / 9.8
     return peso_otro_planeta
 
